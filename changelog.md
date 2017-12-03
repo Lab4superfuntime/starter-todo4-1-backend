@@ -197,3 +197,15 @@ Release Date: 2017-11-19
 ### Updated
     - models/Tasks.php extended xml(NM)
     - core/My_Model.php added XML_Model to it(NM)
+
+## *Version 1.3.0*
+Release Date: 2017-12-03
+
+### Added
+    - controllers/Job.php making a rest api to access models and data
+    - third_part/restful added library to allow for restful api setup
+    
+### Updated
+    - updated views removed all unessary
+    - updated controllers removed all unessary
+    - config/routes added routes correctly
