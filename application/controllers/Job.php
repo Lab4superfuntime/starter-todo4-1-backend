@@ -38,8 +38,11 @@ class Job extends Rest_Controller {
 // Handle an incoming PUT - crUd
     function index_put($key=null)
     {
-        $this->response('ok', 200);
+        $record = array_merge(array('id' => $key), $this->_put_args);
+        $this->tasks->update($record);
+        $this->response(array('ok'), 200);
     }
+
 
 // Handle an incoming POST - Crud
     function index_post($key=null)
